@@ -16,7 +16,7 @@ const Price = () => {
       </div>
       <div className="price-container">
         <div className="price-bitcoin">
-          <img src="src/assets/bitcoin-img.svg" alt="bitcoin img" />
+          <img src="/bitcoin-img.svg" alt="bitcoin img" />
           <p>Bitcoin</p>
           <p>BTC</p>
           <button>Rank #1</button>

@@ -4,7 +4,7 @@ import "./team.scss";
 const data = [
   {
     id: "1",
-    img: "src/assets/Team-member/member-1.jpeg",
+    img: "/member-1.jpeg",
     name: "John Smith",
     desg: "Designation here",
     aboutMember:
@@ -12,7 +12,7 @@ const data = [
   },
   {
     id: "2",
-    img: "src/assets/Team-member/member-2.jpeg",
+    img: "/member-2.jpeg",
     name: "Elina Williams",
     desg: "Designation here",
     aboutMember:
@@ -20,7 +20,7 @@ const data = [
   },
   {
     id: "3",
-    img: "src/assets/Team-member/member-3.jpeg",
+    img: "/member-3.jpeg",
     name: "John Smith",
     desg: "Designation here",
     aboutMember:

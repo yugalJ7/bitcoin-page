@@ -26,7 +26,7 @@ const GetStarted = () => {
           With our range of features that you can equip for free, KoinX allows
           you to be more educated and aware of your tax reports.
         </p>
-        <img src="src/assets/getStarted.png" alt="login" />
+        <img src="/getStarted.png" alt="login" />
         <button>
           Get Started for FREE <HiMiniArrowRight size={20} />
         </button>

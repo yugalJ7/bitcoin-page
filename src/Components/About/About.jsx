@@ -50,7 +50,7 @@ const About = () => {
           <p className="heading pb-0">Already Holding Bitcoin ?</p>
           <div className="services-des">
             <div className="des-content content-1">
-              <img src="src/assets/about-img1.jpeg" alt="img1" />
+              <img src="/about-img1.jpeg" alt="img1" />
               <div>
                 <p>Calculate your Profits</p>
                 <button>
@@ -60,7 +60,7 @@ const About = () => {
               </div>
             </div>
             <div className="des-content content-2">
-              <img src="src/assets/about-img2.jpeg" alt="img2" />
+              <img src="/about-img2.jpeg" alt="img2" />
               <div>
                 <p>Calculate your tax liability</p>
                 <button>
