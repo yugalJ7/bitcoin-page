@@ -1,0 +1,72 @@
+@import "../../styles/variable.scss";
+
+.sentiment {
+  .sentiment-content {
+    height: auto;
+    border-radius: 10px;
+    background-color: $container_bg-color;
+    position: relative;
+
+    .sentiment-main__head {
+      margin: 21px 0px 0px 3%;
+      padding-top: 2%;
+      font-size: $heading-font-size;
+      font-weight: $heading-font-weight;
+    }
+
+    .sentiment-header {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      align-items: center;
+      p {
+        margin-left: 3%;
+        font-weight: 500;
+        color: $darkGrey-text-color;
+      }
+    }
+
+    .sentiment-analys__progessBar {
+      display: flex;
+      gap: 5%;
+      padding-bottom: 3rem;
+      align-items: center;
+
+      .progressbar__radical {
+        width: 7.5rem;
+        height: 7.5rem;
+        background-color: #eaf9f5;
+        border-radius: 50%;
+        text-align: center;
+        margin-left: 3%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          color: #06b48b;
+          text-align: center;
+          margin: 0px;
+          font-size: 2rem;
+          font-weight: 500;
+        }
+      }
+
+      .progressbar__linear {
+        display: flex;
+        flex-direction: column;
+
+        div {
+          display: flex;
+          flex-direction: row;
+          gap: 9px;
+          align-items: center;
+          p {
+            color: $lightGrey-text-color;
+            font-size: 14px;
+            margin: 12px 0px;
+          }
+        }
+      }
+    }
+  }
+}

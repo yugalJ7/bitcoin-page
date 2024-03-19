@@ -1,0 +1,158 @@
+@import "../../styles/variable.scss";
+
+.about {
+  .about-content {
+    height: 70%;
+    border-radius: 10px;
+    background-color: $container_bg-color;
+
+    div {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+      border-bottom: 1px solid #dde1e5;
+    }
+
+    .about-sec_head {
+      margin-bottom: 0px;
+      font-weight: 600;
+      font-size: 17px;
+    }
+
+    .about-content {
+      line-height: 1.6;
+      color: $darkGrey-text-color;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .about-content__services {
+      .pb-0 {
+        padding-top: 0px;
+        padding-bottom: 15px;
+      }
+      .services-des {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+        height: 8.5rem;
+        margin: 0px 30px 15px 0px;
+        border: none;
+
+        .des-content {
+          display: flex;
+          align-items: start;
+          height: 100%;
+          border-radius: 8px;
+          margin: 0px;
+          width: 26vw;
+
+          div {
+            border: none;
+            p {
+              color: $container_bg-color;
+              font-size: 20px;
+              font-weight: 600;
+            }
+            button {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              border: none;
+              width: 8rem;
+              height: 2rem;
+              background-color: $container_bg-color;
+              border-radius: 8px;
+              font-size: 15px;
+              letter-spacing: 0.5px;
+              font-weight: 549.5;
+            }
+          }
+
+          img {
+            width: 7.2rem;
+            height: 7rem;
+            margin: 0.8rem 0px 0.8rem 0.8rem;
+            border-radius: 8px;
+            object-fit: cover;
+          }
+        }
+
+        .content-1 {
+          background-image: linear-gradient(
+            to bottom right,
+            #74eba4 10%,
+            #2175ab 90%
+          );
+        }
+        .content-2 {
+          background-image: linear-gradient(
+            to bottom right,
+            #ff9966 10%,
+            #f2443b 90%
+          );
+        }
+      }
+    }
+
+    .about-content__end {
+      border: none;
+      padding-bottom: 1.8rem;
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .about-content {
+      .about-content__services {
+        .services-des {
+          margin: 0px 10px 15px 0px;
+          .des-content {
+            width: 95%;
+            height: 90%;
+            div {
+              p {
+                font-size: 15px;
+              }
+            }
+            img {
+              width: 6rem;
+              height: 5.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .about-content {
+      .about-content__services {
+        .services-des {
+          grid-template-columns: repeat(1, 1fr);
+          height: auto;
+
+          .des-content {
+            height: 95%;
+            width: 100%;
+            div {
+              p {
+                font-size: 15px;
+                font-weight: 600;
+              }
+
+              button {
+                width: 7rem;
+                height: 1.6rem;
+                font-size: 12px;
+                letter-spacing: 0.3px;
+                font-weight: 549;
+              }
+            }
+            img {
+              width: 6.2rem;
+              height: 6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

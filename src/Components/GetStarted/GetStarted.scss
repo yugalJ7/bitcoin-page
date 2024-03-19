@@ -1,0 +1,53 @@
+@import "../../styles/variable.scss";
+
+.getStarted {
+  .getStarted-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0052fd;
+    border-radius: 13px;
+    padding: 0.8rem 2.5rem 2rem 2.5rem;
+    color: white;
+    width: 23vw;
+
+    .w-5 {
+      text-align: center;
+      line-height: 1.6;
+      margin-bottom: 0px;
+    }
+
+    img {
+      width: 16rem;
+      height: 15rem;
+    }
+    button {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: none;
+      width: 15rem;
+      background-color: $container_bg-color;
+      border-radius: 8px;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      font-weight: 549.9;
+      padding: 0.7rem 1rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .getStarted-container {
+      width: 75vw;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .getStarted-container {
+      width: 75vw;
+      padding: 0.5rem 0.8rem 2rem 0.8rem;
+      img {
+        width: 13rem;
+        height: 12rem;
+      }
+    }
+  }
+}

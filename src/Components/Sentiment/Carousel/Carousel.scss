@@ -1,0 +1,69 @@
+@import "../../../styles/variable.scss";
+
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 13px;
+  width: 58vw;
+  padding-left: 1.5rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  .icon {
+    z-index: 0;
+    position: absolute;
+    top: 35%;
+    right: 1.5rem;
+  }
+
+  .carousel-item {
+    display: flex;
+    min-width: 26vw;
+    gap: 10px;
+    align-items: start;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 1rem 1.5rem 1.5rem 1rem;
+    line-height: 1.6;
+
+    p:nth-child(1) {
+      margin-top: 0px;
+    }
+    p:nth-child(2) {
+      color: $secondary-text-color;
+    }
+  }
+  .carousel-item div:nth-child(1) {
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    min-width: 85vw;
+
+    .carousel-item {
+      min-width: 50vw;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .carousel-container {
+    padding-left: 0.5rem;
+    min-width: 90vw;
+
+    .icon {
+      top: 31%;
+      right: 1%;
+    }
+    .carousel-item {
+      min-width: 65vw;
+      line-height: 1.3;
+      font-size: 10px;
+    }
+  }
+}

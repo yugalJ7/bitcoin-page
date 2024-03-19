@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "variable";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background__main;
+  font-family: "Inter", sans-serif;
+}
+
+.main__container {
+  width: 61vw;
+  height: 100%;
+  margin-left: 3.5rem;
+}
+
+.left__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  position: absolute;
+  left: 66%;
+  top: 15.2%;
+}
+.heading {
+  margin: 21px 0px 0px 0px;
+  padding: 2% 0px 10px 0px;
+  font-size: $heading-font-size;
+  font-weight: $heading-font-weight;
+}
+
+@media screen and (width: 1024px) {
+  .left__container {
+    left: 68%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main__container {
+    width: 92vw;
+    margin-left: 2.3rem;
+  }
+  .left__container {
+    margin-top: 3rem;
+    position: static;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main__container {
+    margin-left: 1.2rem;
+    width: 93vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main__container {
+    margin-left: 1rem;
+    width: 93vw;
+  }
+}

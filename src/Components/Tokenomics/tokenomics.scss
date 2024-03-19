@@ -1,0 +1,63 @@
+@import "../../styles/variable.scss";
+
+.tokenomics {
+  .tokenomics-content {
+    height: 70%;
+    border-radius: 10px;
+    background-color: $container_bg-color;
+
+    div {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .mg {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .tokenomics-sec_head {
+      margin-bottom: 0px;
+      font-weight: 500;
+      font-size: 19px;
+    }
+
+    .tokenomics-content {
+      line-height: 1.6;
+      color: $darkGrey-text-color;
+      font-weight: 400;
+      font-size: 14px;
+      padding-bottom: 3rem;
+    }
+  }
+
+  .circular__prog-bar {
+    width: 90%;
+    min-height: 27vh;
+    display: flex;
+    align-items: center;
+
+    div:nth-child(1) {
+      margin: 0px;
+      width: 21%;
+    }
+    div:nth-child(2) {
+      .prog-bar__innerDiv {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        align-items: center;
+        margin: 0px;
+        gap: 10px;
+
+        .mg-0 {
+          margin: 0px;
+        }
+        .fw {
+          font-size: 15px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

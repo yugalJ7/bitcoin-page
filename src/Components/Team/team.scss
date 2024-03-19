@@ -1,0 +1,54 @@
+@import "../../styles/variable.scss";
+
+.team {
+  .team-intro {
+    height: 70%;
+    border-radius: 10px;
+    background-color: $container_bg-color;
+
+    .mg {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+
+    .team-content {
+      line-height: 1.6;
+      color: $darkGrey-text-color;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .team-members {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 2rem;
+      .member {
+        border-radius: 8px;
+        display: flex;
+        gap: 25px;
+        flex-direction: row;
+        padding: 0.8rem 1.5rem 0.6rem 1.5rem;
+
+        div:first-child:not(:last-child) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 770px) {
+    .team-intro {
+      height: auto;
+      .team-members {
+        .member {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
