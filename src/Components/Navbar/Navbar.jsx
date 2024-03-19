@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="navbar_logo">
-          <img src="src/assets/logo.png" alt="koinX-logo" />
+          <img src="/logo.png" alt="koinX-logo" />
           <span>&#8482;</span>
         </div>
         <div className="menu-icon" onClick={handleShowNav}>
